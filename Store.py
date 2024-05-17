@@ -26,8 +26,16 @@ store1.add_item("яблоки", 250)
 store1.add_item("бананы", 105)
 
 store2.add_item("монитор MSI", 25000)
-store2.add_item("Клавиатура ASUA", 1500)
+store2.add_item("Клавиатура ASUS", 1500)
 
 store3.add_item("суп том-ям", 500)
 store3.add_item("креветки охлажденные", 1000)
 
+store1.update_price("яблоки", 205)
+
+print(f"Цена на яблоки {store1.name}: ${store1.get_price('яблоки')}")
+
+store2.remove_item("Клавиатура ASUS")
+
+for store in [store1, store2, store3]:
+    print(f"Магазин: {store.name}, Адрес: {store.address}, Товары: {store.items}")
