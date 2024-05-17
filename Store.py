@@ -17,3 +17,8 @@ class Store:
     def update_price(self, item_name, new_price):
         if item_name in self.items:
             self.items[item_name] = new_price
+
+store1 = Store("Пятерочка", "Кировоградская, 42")
+store2 = Store("Колумбус", "Кировоградская, 13А")
+store3 = Store("ВкусВилл", "Кировоградская, 23")
+
